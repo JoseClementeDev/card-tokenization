@@ -51,7 +51,7 @@ docker compose up -d redis
 
 ### Consideraciones
 
-- Vamos a usar token **"pk_test_123456"** solicitud para facilitar las pruebas.
+- Vamos a usar el token **"pk_test_123456"** en cada solicitud para facilitar las pruebas.
 - El tiempo de expiración del token sera de 1 minuto.
 
 ### 1. Lanzar servidor de desarrollo:
