@@ -1,0 +1,43 @@
+{
+  "name": "card-tokenization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "lint": "ts-standard",
+    "test": "NODE_ENV=test jest --coverage",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "@types/jest": "29.5.12",
+    "@types/supertest": "6.0.2",
+    "@types/uuid": "9.0.8",
+    "jest": "29.7.0",
+    "supertest": "6.3.4",
+    "ts-jest": "29.1.2",
+    "ts-node-dev": "2.0.0",
+    "ts-standard": "12.0.2",
+    "typescript": "5.4.2"
+  },
+  "dependencies": {
+    "express": "4.19.0",
+    "redis": "4.6.13",
+    "uuid": "9.0.1",
+    "zod": "3.22.4"
+  },
+  "engines": {
+    "node": ">=20.11.1"
+  },
+  "ts-standard": {
+    "ignore": [
+      "build",
+      "src/**/*.js"
+    ]
+  }
+}

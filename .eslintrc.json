@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "./node_modules/ts-standard/eslintrc.json"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "ignorePatterns": [
+        "build",
+        // "src/**/*.test.ts",
+        "src/**/*.js"
+    ],
+    // "rules": {
+    //     // disable the rule for all files
+    //     "@typescript-eslint/no-misused-promises": "off"
+    // },
+    "overrides": [
+        {
+            // enable the rule specifically for TypeScript files
+            "files": [
+                "*.ts",
+                "*.mts",
+                "*.cts",
+                "*.tsx"
+            ]
+        }
+    ]
+}
